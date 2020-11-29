@@ -33,10 +33,28 @@ void Module::addStudent(Student* student)
 
 void Module::addStudents(std::vector<Student*> students)
 {
-	int i;
-	for (i = students.size() - 1; i >= 0; i--)
+	for (int i = students.size() - 1; i >= 0; i--)
 	{
 		this->students.push_back(students[i]);
+	}
+}
+
+void Module::removeStudent(Student* student)
+{
+	if (std::find(students.begin(), students.end(), student) != students.end())
+	{
+		students.erase(std::find(students.begin(), students.end(), student));
+	}
+}
+
+void Module::removeStudents(std::vector<Student*> students)
+{
+	for (int i = students.size() - 1; i >= 0; i--)
+	{
+		if (std::find(students.begin(), students.end(), students[i]) != students.end())
+		{
+			students.erase(std::find(students.begin(), students.end(), students[i]));
+		}
 	}
 }
 
@@ -58,4 +76,9 @@ int Module::checkEcForStudent(Student* student)
 		return getEc();
 	}
 	return 0;
+}
+
+void Module::changeEc(int value)
+{
+	ec = value;
 }

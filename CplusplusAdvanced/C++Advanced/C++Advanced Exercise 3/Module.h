@@ -25,8 +25,11 @@ public:
 	Docent* getDocent() { return docent; };
 	void addStudent(Student* student);
 	void addStudents(std::vector<Student*> students);
+	void removeStudent(Student* student);
+	void removeStudents(std::vector<Student*> students);
 	Student* getStudent(int i) { return students[i]; };
 	std::vector<Student*> getStudents() { return students; };
 	void printInfo();
 	int checkEcForStudent(Student* student);
+	void changeEc(int value);
 };

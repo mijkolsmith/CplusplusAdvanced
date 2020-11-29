@@ -40,11 +40,14 @@ int main()
 	module3->addStudent(student6);
 	
 	//step 1
+	std::cout << "step 1" << std::endl;
 	module1->printInfo();
 	module2->printInfo();
 	module3->printInfo();
+	std::cout << std::endl;
 
 	//step 2
+	std::cout << "step 2" << std::endl;
 	student1->setEc(module1->checkEcForStudent(student1) + module2->checkEcForStudent(student1) + module3->checkEcForStudent(student1));
 	student2->setEc(module1->checkEcForStudent(student2) + module2->checkEcForStudent(student2) + module3->checkEcForStudent(student3));
 	student3->setEc(module1->checkEcForStudent(student3) + module2->checkEcForStudent(student3) + module3->checkEcForStudent(student3));
@@ -66,11 +69,42 @@ int main()
 	student8->printInfo();
 	student9->printInfo();
 	student10->printInfo();
-	//step3
+	std::cout << std::endl;
 
+	//step3
+	std::cout << "step 3" << std::endl;
+	module1->changeEc(5);
+
+	student1->setEc(module1->checkEcForStudent(student1) + module2->checkEcForStudent(student1) + module3->checkEcForStudent(student1));
+	student2->setEc(module1->checkEcForStudent(student2) + module2->checkEcForStudent(student2) + module3->checkEcForStudent(student3));
+	student3->setEc(module1->checkEcForStudent(student3) + module2->checkEcForStudent(student3) + module3->checkEcForStudent(student3));
+	student4->setEc(module1->checkEcForStudent(student4) + module2->checkEcForStudent(student4) + module3->checkEcForStudent(student4));
+	student5->setEc(module1->checkEcForStudent(student5) + module2->checkEcForStudent(student5) + module3->checkEcForStudent(student5));
+	student6->setEc(module1->checkEcForStudent(student6) + module2->checkEcForStudent(student6) + module3->checkEcForStudent(student6));
+	student7->setEc(module1->checkEcForStudent(student7) + module2->checkEcForStudent(student7) + module3->checkEcForStudent(student7));
+	student8->setEc(module1->checkEcForStudent(student8) + module2->checkEcForStudent(student8) + module3->checkEcForStudent(student8));
+	student9->setEc(module1->checkEcForStudent(student9) + module2->checkEcForStudent(student9) + module3->checkEcForStudent(student3));
+	student10->setEc(module1->checkEcForStudent(student10) + module2->checkEcForStudent(student10) + module3->checkEcForStudent(student3));
+
+	student1->printInfo();
+	student2->printInfo();
+	student3->printInfo();
+	student4->printInfo();
+	student5->printInfo();
+	student6->printInfo();
+	student7->printInfo();
+	student8->printInfo();
+	student9->printInfo();
+	student10->printInfo();
+	std::cout << std::endl;
 
 	//step4
-
+	std::cout << "step 4" << std::endl;
+	module1->removeStudent(student1);
+	module1->printInfo();
+	module2->printInfo();
+	module3->printInfo();
+	std::cout << std::endl;
 
 	//end
 	getchar();
