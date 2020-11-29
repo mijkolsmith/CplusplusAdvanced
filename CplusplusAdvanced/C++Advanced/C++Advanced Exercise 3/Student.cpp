@@ -16,3 +16,8 @@ Student & Student::operator=(const Student& c)
 Student::~Student()
 {
 }
+
+void Student::printInfo()
+{
+	std::cout << naam << " ec " << ec << std::endl;
+}

@@ -14,4 +14,6 @@ public:
 	~Student();
 	std::string getNaam() { return naam; }
 	int getEc() { return ec; }
+	void setEc(int ec) { this->ec = ec; }
+	void printInfo();
 };

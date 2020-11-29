@@ -24,5 +24,9 @@ public:
 	void addDocent(Docent* docent);
 	Docent* getDocent() { return docent; };
 	void addStudent(Student* student);
+	void addStudents(std::vector<Student*> students);
 	Student* getStudent(int i) { return students[i]; };
+	std::vector<Student*> getStudents() { return students; };
+	void printInfo();
+	int checkEcForStudent(Student* student);
 };
