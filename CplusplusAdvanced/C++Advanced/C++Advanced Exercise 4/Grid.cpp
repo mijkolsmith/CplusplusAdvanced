@@ -48,11 +48,11 @@ void Grid::displayGrid()
 		{
 			if (cells[i][j].alive)
 			{
-				std::cout << "X";
+				std::cout << "X ";
 			}
 			else
 			{
-				std::cout << "O";
+				std::cout << "  ";
 			}
 			
 		}
