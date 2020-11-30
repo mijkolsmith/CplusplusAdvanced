@@ -152,12 +152,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="Conway.h" />
     <ClInclude Include="Grid.h" />
+    <ClInclude Include="OtherRuleset.h" />
+    <ClInclude Include="OtherRuleset2.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Strategy.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C++Advanced Exercise 4.cpp" />
+    <ClCompile Include="Conway.cpp" />
     <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="OtherRuleset.cpp" />
+    <ClCompile Include="OtherRuleset2.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

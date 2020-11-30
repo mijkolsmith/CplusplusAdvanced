@@ -1,8 +1,7 @@
 #pragma once
 class Cell {
-private:
-	
 public:
+	int neighboursAlive;
 	bool alive;
 	Cell() { alive = 0; }
 };

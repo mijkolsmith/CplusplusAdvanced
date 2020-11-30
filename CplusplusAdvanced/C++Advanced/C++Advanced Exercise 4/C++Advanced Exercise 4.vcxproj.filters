@@ -24,6 +24,18 @@
     <ClInclude Include="Grid.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Strategy.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Conway.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherRuleset.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherRuleset2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -33,6 +45,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Conway.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherRuleset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherRuleset2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
