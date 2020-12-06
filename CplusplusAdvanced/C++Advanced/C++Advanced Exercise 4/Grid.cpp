@@ -44,6 +44,7 @@ void Grid::displayGrid()
 {
 	for (int i = 0; i < sizeof(cells) / sizeof(cells[0]); i++)
 	{
+		std::cout << "                        ";
 		for (int j = 0; j < sizeof(cells[0]) / sizeof(cells[0][0]); j++)
 		{
 			if (cells[i][j].alive)
