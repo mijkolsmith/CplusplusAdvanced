@@ -1,6 +1,4 @@
 ﻿  C++Advanced Exercise 5.cpp
-c:\users\michael\documents\cplusplusadvanced\cplusplusadvanced\c++advanced\c++advanced exercise 5\c++advanced exercise 5.cpp(23): warning C4018: '<': signed/unsigned mismatch
-c:\users\michael\documents\cplusplusadvanced\cplusplusadvanced\c++advanced\c++advanced exercise 5\c++advanced exercise 5.cpp(30): warning C4018: '<': signed/unsigned mismatch
-  Queue.cpp
-  Generating Code...
+c:\users\michael\documents\cplusplusadvanced\cplusplusadvanced\c++advanced\c++advanced exercise 5\c++advanced exercise 5.cpp(32): warning C4018: '<': signed/unsigned mismatch
+c:\users\michael\documents\cplusplusadvanced\cplusplusadvanced\c++advanced\c++advanced exercise 5\c++advanced exercise 5.cpp(39): warning C4018: '<': signed/unsigned mismatch
   C++Advanced Exercise 5.vcxproj -> C:\Users\Michael\Documents\CplusplusAdvanced\CplusplusAdvanced\C++Advanced\Debug\C++Advanced Exercise 5.exe
