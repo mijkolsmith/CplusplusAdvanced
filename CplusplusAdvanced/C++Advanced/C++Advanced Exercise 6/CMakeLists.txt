@@ -1,11 +1,14 @@
 cmake_minimum_required(VERSION 3.8)
-project(Opdracht-ProducerConsumer)
+project(Voorbeeld-MoveSemanticsBlock)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 11)
+
+SET(CMAKE_CXX_FLAGS "-fno-elide-constructors")
 
 set(SOURCE_FILES
-	main.cpp
-)
-SET(CMAKE_CXX_FLAGS -pthread)
+        Block.cpp
+        Block.h
+        main.cpp
+        )
 
-add_executable(Opdracht-ProducerConsumer ${SOURCE_FILES})
+add_executable(Voorbeeld-MoveSemanticsBlock ${SOURCE_FILES})
