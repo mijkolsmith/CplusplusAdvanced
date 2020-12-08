@@ -156,7 +156,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C++Advanced Exercise 7.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Child.cpp" />
     <ClCompile Include="Parent.cpp" />
     <ClCompile Include="pch.cpp">

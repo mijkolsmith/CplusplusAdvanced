@@ -1,8 +1,11 @@
-  
-cmake_minimum_required(VERSION 3.6)
-project(ParentChildPtr)
+cmake_minimum_required(VERSION 3.8)
+project(Opdracht-ProducerConsumer)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp Parent.cpp Parent.h Child.cpp Child.h)
-add_executable(ParentChildPtr ${SOURCE_FILES})
+set(SOURCE_FILES
+	main.cpp
+)
+SET(CMAKE_CXX_FLAGS -pthread)
+
+add_executable(Opdracht-ProducerConsumer ${SOURCE_FILES})

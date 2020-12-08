@@ -29,13 +29,13 @@
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C++Advanced Exercise 7.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Child.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Parent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
