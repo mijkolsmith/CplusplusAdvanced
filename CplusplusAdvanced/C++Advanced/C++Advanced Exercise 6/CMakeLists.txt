@@ -8,6 +8,10 @@ SET(CMAKE_CXX_FLAGS "-fno-elide-constructors")
 set(SOURCE_FILES
         Block.cpp
         Block.h
+		Child.ccp
+		Child.h
+		Parent.cpp
+		Parent.h
         main.cpp
         )
 

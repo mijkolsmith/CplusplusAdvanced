@@ -2,16 +2,19 @@
 #include "Block.h"
 #include <iostream>
 
+//constructor
 Block::Block(int size, std::string name) : name(name), size(size) {
 	std::cout << "CTOR Block '" << name << "' @" << this << std::endl;
 	this->data = new int[size];
 }
 
+//destructor
 Block::~Block() noexcept {
 	std::cout << "DTOR Block '" << this->name << "' @" << this << std::endl;
 	delete[] data;
 }
 
+//copy constructor
 Block::Block(const Block& other) : name(other.name), size(other.size) {
 	std::cout << "CCTOR Block '" << other.name << "' @" << this << std::endl;
 	this->data = new int[size];
@@ -19,6 +22,7 @@ Block::Block(const Block& other) : name(other.name), size(other.size) {
 	std::copy(other.data, other.data + other.size, data);
 }
 
+//assignment operator
 Block& Block::operator=(const Block& other) {
 	std::cout << "Assignment opr Block '" << this->name << "' @" << this << std::endl;
 	if (this == &other) return *this;
@@ -36,7 +40,7 @@ Block& Block::operator=(const Block& other) {
 
 // move-constructor
 Block::Block(Block&& other) noexcept {
-	std::cout << "MCTOR from Block '" << other.name << "' @" << &other << " to Block @" << this << std::endl;
+	std::cout << "Move CTOR from Block '" << other.name << "' @" << &other << " to Block @" << this << std::endl;
 	name = std::move(other.name);
 	data = other.data;
 	size = other.size;
@@ -47,7 +51,20 @@ Block::Block(Block&& other) noexcept {
 	other.data = nullptr;
 }
 
-//TODO: move-assignment operator
+//move-assignment operator
+Block& Block::operator=(Block&& other)
+{
+	if (this == &other) return *this;
+	std::cout << "Move Assignment Opr from Block '" << other.name << "' @" << &other << " to Block @" << this << std::endl;
+	name = std::move(other.name);
+	data = other.data;
+	size = other.size;
+
+	other.name = "(nodata: has been moved)";
+	other.size = 0;
+	other.data = nullptr;
+	return *this;
+}
 #endif
 
 std::ostream& operator<<(std::ostream& os, const Block& block) {

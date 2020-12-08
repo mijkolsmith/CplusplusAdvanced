@@ -1,12 +1,12 @@
 #pragma once
-
+#include "Child.h"
 #include <string>
 #include <ostream>
-#include "Child.h"
 
 class Parent {
 public:
 	Parent(std::string name);
+
 	Parent(const Parent& other);
 	virtual ~Parent();
 	Parent& operator=(const Parent& other);

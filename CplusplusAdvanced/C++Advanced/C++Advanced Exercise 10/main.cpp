@@ -1,15 +1,26 @@
 #include "pch.h"
 #include "Block.h"
+#include "Parent.h"
 #include <iostream>
 
-Block makeBlock(int size, std::string name) {
+Block makeBlock(int size, std::string name) 
+{
 	std::cout << "begin makeBlock: " << std::endl;
 	Block newBlock = Block(size, name);
 	std::cout << "einde makeBlock: " << newBlock << std::endl;
 	return newBlock;
 }
 
-int main() {
+Parent makeParent(std::string name)
+{
+	std::cout << "begin makeParent: " << std::endl;
+	Parent newParent = Parent(name);
+	std::cout << "einde makeParent: " << newParent << std::endl;
+	return newParent;
+}
+
+int main() 
+{
 	std::cout << "------" << std::endl;
 
 	Block block1(1024, "block1");
@@ -35,6 +46,11 @@ int main() {
 	std::cout << block3 << std::endl;
 
 	std::cout << "------" << std::endl;
+
+	std::cout << "voor makeParent" << std::endl;
+	Parent parent = makeParent("parent");
+	std::cout << "na makeParent" << std::endl;
+	std::cout << parent << std::endl;
 
 	return 0;
 }
