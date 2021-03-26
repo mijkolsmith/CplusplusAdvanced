@@ -52,8 +52,10 @@ std::ostream& Bankrekening::operator<<(const Bankrekening& other)
 	return std::cout << other.getSaldo();
 }
 
-void Bankrekening::verwerkTransactie(const Transactie & other, bool positive)
+void Bankrekening::verwerkTransactie(const Transactie& other, bool positive)
 {
+	history.push_back(other);
+
 	if (positive == true)
 	{
 		saldo += other.getWaarde();

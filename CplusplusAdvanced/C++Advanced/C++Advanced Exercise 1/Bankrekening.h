@@ -1,13 +1,15 @@
 #pragma once
 #include "Transactie.h"
 #include <iostream>
+#include <vector>
 
 class Bankrekening {
 private:
 	float saldo = 0;
+	std::vector<Transactie> history;
 public:
 	Bankrekening();
-	Bankrekening(int waarde) : saldo(waarde) {};
+	Bankrekening(float waarde) : saldo(waarde) {};
 	~Bankrekening();
 	Bankrekening(const Bankrekening& other);
 	Bankrekening& operator=(const Bankrekening& other);

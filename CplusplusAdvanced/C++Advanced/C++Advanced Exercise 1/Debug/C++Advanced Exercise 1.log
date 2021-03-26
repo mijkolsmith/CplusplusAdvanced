@@ -1,4 +1,4 @@
-﻿  C++ Advanced Exercise 1.cpp
-c:\users\michael\documents\cplusplusadvanced\cplusplusadvanced\c++advanced\c++advanced exercise 1\transactie.h(7): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\michael\documents\cplusplusadvanced\cplusplusadvanced\c++advanced\c++advanced exercise 1\bankrekening.h(10): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+﻿  Bankrekening.cpp
+  C++ Advanced Exercise 1.cpp
+  Generating Code...
   C++Advanced Exercise 1.vcxproj -> C:\Users\Michael\Documents\CplusplusAdvanced\CplusplusAdvanced\C++Advanced\Debug\C++Advanced Exercise 1.exe
